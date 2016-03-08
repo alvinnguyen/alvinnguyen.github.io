@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Alvin Nguyen - Discover, Learn, Share</title>
+  <title>{% if page.title %} {{ page.title }} - {% endif %} Alvin Nguyen {% if page.title == nil %} - Discover, Learn, Share{% endif %}</title>
   <meta name="description" content="Alvin Nguyen website on GitHub. Development related blogging built on Jerkyll.">
   <meta name="author" content="Alvin Nguyen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

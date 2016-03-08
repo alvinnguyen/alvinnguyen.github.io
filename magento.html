@@ -2,8 +2,4 @@
 layout: master
 ---
 <b>Knowledge sharing articles in Magento</b>
-<ul>
-    {% for post in site.categories.magento  %}
-    <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date_to_string }}</a></li>
-    {% endfor %}
-</ul>
+{% include templates/posts_list.html category="magento" %}
