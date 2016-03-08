@@ -1,0 +1,40 @@
+---
+layout: master
+title: Discover, Learn, Share
+---
+<b>Latest knowledge sharing articles</b>
+<ul>
+    {% for post in site.posts  %}
+        <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date_to_string }}</a></li>
+    {% endfor %}
+</ul>
+<b>E-commerce</b>
+<ul>
+    <li><a href="http://www.magentocommerce.com/certification/directory/dev/873375/">Magento Developer Plus</a></li>
+</ul>
+<b>Back-end</b>
+<ul>
+    <li>OO PHP: Zend, Laravel, Expression Engine</li>
+    <li>Redis, Vagrant, Composer, X-Debug</li>
+    <li>Keen to work on Ruby & RoR</li>
+    <li>Not interested in WordPress</li>
+</ul>
+<b>Front-end</b>
+<ul>
+    <li>SASS, LESS, Grunt</li>
+    <li>Bootstrap, Foundation</li>
+    <li>Backbone, jQuery</li>
+    <li>Keen to work on Angular / React</li>
+</ul>
+<b>DevOps</b>
+<ul>
+    <li>AWS stack (EC2, ELB, RDS, S3, SES, Route 53), Heroku</li>
+    <li>Jenkins, Bamboo</li>
+    <li>Varnish</li>
+    <li>NGINX, PHP-FPM</li>
+</ul>
+<b>Mobile</b>
+<ul>
+    <li>Swift</li>
+    <li>React-native</li>
+</ul>
