@@ -56,6 +56,10 @@ p.date {
   font-size: 0.9em;
 }
 
+p.p404 {
+  font-family: Arial, sans-serif;
+}
+
 footer {
   position: fixed;
   bottom: 0;
