@@ -16,7 +16,7 @@
       {% include templates/navigation.html %}
     </div>
     <div class="col-sm-8 content">
-      <h2>{{ page.title }}</h2>
+      {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
       {% if page.date %}
         <p class="date">
           Published {{ page.date | date_to_string }}
