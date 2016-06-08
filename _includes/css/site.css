@@ -1,6 +1,6 @@
 body {
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding-bottom: 30px;
 }
 
@@ -26,6 +26,10 @@ a {
   text-decoration: underline;
 }
 
+b, strong {
+  font-weight: 600;
+}
+
 a:hover {
   color: inherit;
 }
@@ -39,9 +43,13 @@ ul {
   margin-top: 5px;
 }
 
+li {
+  line-height: 1.7em;
+}
+
 
 .sidebar {
-  max-width: 175px;
+  max-width: 200px;
 }
 
 .row {
@@ -65,7 +73,7 @@ footer {
   bottom: 0;
   left: 0;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
   color: white;
