@@ -1,7 +1,7 @@
 ---
 layout: master
 category: webdev
-title: Varnish logging and grep outputing to file
+title: Varnish logging and preventing crossed session issue
 ---
 
 Just a quick note to log the Varnish logging
