@@ -4,6 +4,24 @@
   src: url("/assets/fonts/sf-pro-text_regular.woff");
 }
 
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("/assets/fonts/sf-pro-text_semibold.woff");
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("/assets/fonts/sf-pro-text_semibold.woff");
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("/assets/fonts/sf-pro-text_bold.woff");
+}
+
 body {
   font-size: 14px;
   font-family: 'San Francisco', sans-serif;
