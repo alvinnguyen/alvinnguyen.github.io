@@ -1,31 +1,18 @@
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("/assets/fonts/sf-pro-text_regular.woff");
-}
-
-@font-face {
-  font-family: "San Francisco";
+  font-family: "SFMono";
   font-weight: 500;
-  src: url("/assets/fonts/sf-pro-text_semibold.woff");
+  src: url("/assets/fonts/SFMono-Regular.otf");
 }
 
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 600;
-  src: url("/assets/fonts/sf-pro-text_semibold.woff");
-}
-
-@font-face {
-  font-family: "San Francisco";
+  font-family: "SFMono";
   font-weight: 700;
-  src: url("/assets/fonts/sf-pro-text_bold.woff");
+  src: url("/assets/fonts/SFMono-Bold.otf");
 }
 
 body {
-  font-size: 14px;
-  font-family: 'San Francisco', sans-serif;
-  padding-bottom: 30px;
+  font-size: 12px;
+  font-family: 'SFMono', sans-serif;
 }
 
 h1, h2, h3 {
@@ -37,17 +24,25 @@ h1 {
 }
 
 h2 {
-  background: black;
-  color: white;
+  color: black;
   display: inline-block;
-  padding: 5px 8px;
+  padding: 8px 0 0 0;
   text-transform: uppercase;
-  margin-left: -5px;
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 8px 0;
 }
 
 a {
   color: black;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 b, strong {
@@ -69,19 +64,11 @@ ul {
 
 li {
   line-height: 1.7em;
-}
-
-
-.sidebar {
-  max-width: 250px;
+  list-style: square;
 }
 
 .row {
   margin: 0;
-}
-
-.sidebar, .content {
-  padding: 25px;
 }
 
 p.date {
@@ -134,7 +121,8 @@ footer a {
     text-align: center;
   }
   .content {
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 0;
   }
   footer {
     font-size: 0.7em;
@@ -143,10 +131,99 @@ footer a {
   .social-links {
     padding: 0;
   }
-  .post-categories li,
-  .social-links li {
-    display: inline;
-    list-style: none;
-    padding-right: 10px;
+
+  .navigation .expand {
+    float: right;
   }
+}
+
+.navigation .expand.down:before {
+  content:"\f078";
+  font-family: "FontAwesome";
+}
+
+.navigation .expand.up:before {
+  content:"\f077";
+  font-family: "FontAwesome";
+}
+
+.navigation {
+
+}
+
+.navigation a {
+  text-decoration: none !important;
+}
+
+.navigation .expand {
+  margin-left: 10px;
+}
+
+.navigation h1 {
+  font-size: 16px;
+  margin-bottom: 0;
+  background: #242424;
+  color: white;
+  padding: 10px;
+}
+
+.navigation h1 a {
+  color: white;
+}
+
+.post-categories li {
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  list-style: none;
+  padding-right: 5px;
+}
+
+.post-categories li a {
+  text-decoration: none;
+}
+
+.post-categories {
+  display: none;
+  margin: 0;
+  padding: 5px 10px;
+  background: #e8e8e8;
+}
+
+.post-list code {
+  padding-bottom: 0;
+}
+
+.post-list .post-date {
+  font-size: 10px;
+  line-height: 10px;
+  position: relative;
+  top: -4px;
+  color: #c7c7c7;
+}
+
+.post-list a {
+  display: block;
+  padding: 0;
+  line-height: 14px;
+}
+
+.homepage-section {
+  margin-top: 13px;
+  margin-bottom: 0px;
+  display: block;
+  line-height: 10px;
+}
+
+pre code {
+  font-size: 11px;
+}
+
+.row-no-padding [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+img {
+  max-width: 100%;
 }

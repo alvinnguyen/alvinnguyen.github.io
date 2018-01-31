@@ -1,15 +1,15 @@
-<h1><a href="{{ site.baseurl }}">ALVIN NGUYEN</a></h1>
-<b>Knowledge Sharing</b>
+<h1><a href="{{ site.baseurl }}">ALVIN NGUYEN</a><a class="expand down"></a></h1>
 <ul class="post-categories">
-    <li><a href="{{ baseurl }}/magento/">Magento</a></li>
-    <li><a href="{{ baseurl }}/webdev/">WebDev</a></li>
+    <li><a href="{{ baseurl }}/magento-2/">Magento-2</a></li>
+    <li><a href="{{ baseurl }}/blog/">Blog</a></li>
+    <li><a target="_blank" href="https://github.com/alvinnguyen/">GitHub</a></li>
+    <li><a target="_blank" href="https://www.linkedin.com/in/alvinnguyen">LinkedIn</a></li>
+    <li><a target="_blank" href="mailto:alvin@alvinnguyen.net">Email</a></li>
 </ul>
-<ul class="social-links">
-    <li><a href="https://github.com/alvinnguyen/">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/alvinnguyen">LinkedIn</a></li>
-    <li><a href="mailto:alvin@alvinnguyen.net">Email</a></li>
-</ul>
-<ul class="badges">
-    <li><a href="http://goo.gl/Q94tig"><img src="/assets/images/2017/01/magento.jpg" /></a></li>
-    <li><img title="AWS-ASA-26160" src="/assets/images/2017/01/aws.png" /></li>
-</ul>
+<script>
+    $('.navigation h1').click(function() {
+        $('.post-categories').slideToggle();
+        $('.expand').toggleClass('down');
+        $('.expand').toggleClass('up');
+    })
+</script>
