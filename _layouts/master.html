@@ -16,9 +16,9 @@
     {% include templates/navigation.html %}
   </div>
   <div class="content">
-    {% if page.title %}<div class="row"><div class="col-xs-12"><h2>{{ page.title }}</h2></div></div>{% endif %}
+    {% if page.title %}<div class="row"><div class="col-xs-12 padding-left-right-10"><h2>{{ page.title }}</h2></div></div>{% endif %}
     {% if page.date %}
-    <div class="row"><div class="col-xs-12"><p class="date">
+    <div class="row"><div class="col-xs-12 padding-left-right-10"><p class="date">
       {{ page.date | date_to_string }}
       {% if page.revised-date %}
       / Revised {{ page.revised-date | date_to_string }}
@@ -26,7 +26,7 @@
     </p></div></div>
     {% endif %}
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12 padding-left-right-10">
         {{ content }}
       </div>
     </div>

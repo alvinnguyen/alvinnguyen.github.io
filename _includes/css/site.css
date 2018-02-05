@@ -11,8 +11,11 @@
 }
 
 body {
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'SFMono', sans-serif;
+  width: 640px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 h1, h2, h3 {
@@ -69,6 +72,10 @@ li {
 
 .row {
   margin: 0;
+}
+
+.padding-left-right-10 {
+  padding: 0 10px;
 }
 
 p.date {
